@@ -36,10 +36,11 @@ It transforms boring habit tracking into a **game-like experience** with **coins
 
 ## 📸 Screenshots  
 
-_Add your screenshots here:_  
+![Habitify Home Page]([path/to/screenshot.png](https://github.com/sakshiii996/Habitify-A-Gamified-Habit-Tracker/blob/da6bb485f30d0584d53eef211940fb4bef3d890f/Habitify_homepage.png))
 
-![Habitify Screenshot](path/to/screenshot.png)
-![Dark Mode](path/to/darkmode.png)
+![Habitify Dark Mode]([path/to/darkmode.png](https://github.com/sakshiii996/Habitify-A-Gamified-Habit-Tracker/blob/da6bb485f30d0584d53eef211940fb4bef3d890f/Habitify_darkmode.png))
+
+
 💻 Getting Started
 1. Clone the Repository
 bash
