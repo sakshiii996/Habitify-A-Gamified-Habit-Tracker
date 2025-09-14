@@ -1,0 +1,371 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(225, 243, 255);
+    display: flex;
+    color: rgb(25, 44, 44);
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.sideBar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    width: 220px;
+    background-color: rgb(230, 244, 248);
+    color: rgb(33, 48, 72);
+}
+
+
+#themeToggle {
+    background: var(--card);
+    border: none;
+    font-size: 1.5rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 95%;
+}
+
+
+.main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    gap: 20px;
+}
+
+.section {
+    background-color: rgb(137, 184, 255);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgb(88, 117, 168);
+}
+
+h2,
+h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: rgb(18, 29, 50);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(233, 242, 251);
+    padding: 8px;
+    border-radius: 8px;
+
+}
+
+button {
+    background: rgb(195, 220, 241);
+    border: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+button:hover {
+    background: rgb(192, 204, 214);
+}
+
+.stats-circle {
+    border-radius: 50%;
+    border: 6px rgb(236, 247, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    font-size: 1.2em;
+    margin: 0 auto;
+}
+
+#settingsBtn {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    position: relative;
+    top: -15px;
+    right: -15px;
+    z-index: 2000;
+    padding: 10px;
+
+}
+
+#mobileMenu {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(231, 239, 247);
+    width: 85%;
+    padding: 15px;
+    border-radius: 12px;
+    z-index: 1999;
+    max-height: 80vh;
+    overflow-y: auto;
+    align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    #leftSidebar,
+    #rightSidebar {
+        display: none;
+    }
+
+    #settingsBtn {
+        display: block;
+    }
+
+    #username {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #greeting {
+        font-size: 1.5rem;
+    }
+
+    #habitInput {
+        width: auto;
+        padding: 5px;
+        border-radius: 5px;
+        flex: 1;
+    }
+
+    #themeToggle {
+        margin-left: 94%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #themeToggle {
+        margin-left: 91%;
+    }
+}
+
+@media (max-width: 480px) {
+    #habitMessage {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #habitInput {
+        width: 95%;
+    }
+
+    #categorySelect {
+        width: 99%;
+    }
+
+    #addHabit {
+        width: 100%;
+        margin-left: -1px;
+    }
+
+    #themeToggle {
+        margin-left: 88%;
+    }
+}
+
+
+@media (max-width: 320px) {
+    #habitInput {
+        width: 97%;
+        padding: 5px;
+        border-radius: 5px;
+        flex: 1;
+    }
+
+    #categorySelect {
+        width: 101%;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 0.7rem;
+    }
+
+    #addHabit {
+        padding: 5px;
+        width: 100%;
+    }
+
+    #themeToggle {
+        margin-left: 85%;
+    }
+}
+
+#leftSidebar {
+    overflow-y: auto;
+}
+
+#rewardSection {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#rewardInput,
+#rewardCost,
+#rewardadd {
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    width: 90%;
+    margin-bottom: 5px;
+}
+
+#rewardadd {
+    width: 96%;
+    margin-left: -1px;
+}
+
+#rewards li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+#rewardButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+#rewardButtons button {
+    /* flex: 1; */
+    margin: 0 2px;
+    width: 50%;
+}
+
+#rewards li span {
+    font-size: 1rem;
+    padding: 8px;
+    background-color: rgb(173, 207, 255);
+    width: 90%;
+    border-radius: 7px;
+}
+
+#habitMessage {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+}
+
+#habitInput {
+    flex: 2;
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    min-width: 80px;
+}
+
+#categorySelect {
+    flex: 1;
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    min-width: 60px;
+}
+
+#addHabit {
+    flex: 0.5;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    white-space: nowrap;
+}
+
+    body.dark-mode {
+        background-color: rgb(24, 33, 58);
+        color: #f1f5f9;
+    }
+
+    body.dark-mode .sideBar {
+        background-color: #19273d;
+    }
+
+    body.dark-mode .main {
+        background-color: #162538;
+    }
+    
+    body.dark-mode #menutext {
+        color:#0d243b;
+    }
+    
+    body.dark-mode .section {
+        background-color: rgb(41, 78, 121);
+        box-shadow: 0 0 6px rgba(121, 175, 255, 0.618);
+        color: #e2eaf5;
+    }
+
+    body.dark-mode h2,
+    body.dark-mode h3 {
+        color: #e2eaf5;
+    }
+
+    body.dark-mode li {
+        background-color: #739ac7ec;
+        color: #0d243b;
+    }
+
+    body.dark-mode #rewards li span {
+        background-color: #6d91c2;
+        color: #0a243e;
+    }
+
+
+
+    body.dark-mode button {
+        background: #8eacd6;
+        color: #12213b;
+    }
+
+    body.dark-mode button:hover {
+        background: #a2ccfc;
+    }
+
+    body.dark-mode input,
+    body.dark-mode select {
+        background-color: #bed3f4;
+        color: #122940;
+        border: 1px solid #475569;
+    }
+    
+    #mobileMenu .sideBar {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    #close {
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        background: transparent;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        color: #333;
+    }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Habitify</title>
+</head>
+
+
+<body>
+    <div class="sideBar" id="leftSidebar">
+        <div class="section">
+            <div class="stats-circle" id="xp">0 xp</div>
+        </div>
+        <div class="section">
+            <h3>Coins</h3>
+            <p id="coins">0 coins</p>
+        </div>
+        <div class="section">
+            <h3>Streaks</h3>
+            <p id="streaks"></p>
+        </div>
+        <div class="section" id="rewardSection">
+            <h3>Rewards</h3>
+            <ul id="rewards"></ul>
+            <input type="text" id="rewardInput" placeholder="New reward">
+            <input type="number" id="rewardCost" placeholder="cost(coins)">
+            <button onclick="addReward()" id="rewardadd">Add</button>
+        </div>
+    </div>
+
+    <div class="main">
+        <button id="themeToggle" onclick="toggleDarkMode()">🌙</button>
+        <div class="section" id="username">
+            <h2 id="greeting">Hi!</h2>
+            
+             <div id="settingsBtn" onclick="toggleMenu()">⚙️</div>
+    <div id="mobileMenu" class="section" >
+        <h3>Menu</h3>
+        <button id="close">Close</button>
+        <div id="mobileMenuContent">
+            <button id="close">Close</button>
+        </div>
+    </div>
+        </div>
+        <div class="section">
+            <h3>Add Habit</h3>
+            <div id="habitMessage">
+            <input type="text" id="habitInput" placeholder="New habit">
+            <select id="categorySelect">
+                <option value="Study">Study</option>
+                <option value="Health">Health</option>
+                <option value="Personal">Personal</option>
+                <option value="Other">Other</option>
+            </select>
+            <button id="addHabit" onclick="addHabit()">Add</button>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Habits</h3>
+            <div id="habitCategories"></div>
+            <br>
+            <button onclick="endDay()">End Day</button>
+            <button onclick="resetAll()">Reset</button>
+        </div>
+        <div class="section">
+            <h3>AI Suggestion</h3>
+            <p id="aiSuggestions">Click below to get a tip !</p>
+            <button onclick="aiSuggest()">🤖 AI Suggest</button>
+        </div>
+    </div>
+
+    <div class="sideBar" id="rightSidebar">
+        <div class="section">
+            <h3>Daily Stats</h3><canvas id="statsChart" width="180" height="180"></canvas>
+        </div>
+        <div class="section">
+            <h3>Badges</h3>
+            <p id="badges">Not Yet</p>
+        </div>
+    </div>
+
+   
+ <script src="script.js"></script>
+</body>
+
+</html>
