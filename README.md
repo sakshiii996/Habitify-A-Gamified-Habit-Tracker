@@ -36,9 +36,11 @@ It transforms boring habit tracking into a **game-like experience** with **coins
 
 ## 📸 Screenshots  
 
-![Habitify Home Page]([path/to/screenshot.png](https://github.com/sakshiii996/Habitify-A-Gamified-Habit-Tracker/blob/da6bb485f30d0584d53eef211940fb4bef3d890f/Habitify_homepage.png))
+## Habitify Home Page -
+![Habitify Home Page](https://github.com/sakshiii996/Habitify-A-Gamified-Habit-Tracker/blob/main/Habitify_homepage.png?raw=true)
 
-![Habitify Dark Mode]([path/to/darkmode.png](https://github.com/sakshiii996/Habitify-A-Gamified-Habit-Tracker/blob/da6bb485f30d0584d53eef211940fb4bef3d890f/Habitify_darkmode.png))
+## Habitify Dark Mode -
+![Habitify Dark Mode](https://github.com/sakshiii996/Habitify-A-Gamified-Habit-Tracker/blob/main/Habitify_darkmode.png?raw=true)
 
 
 💻 Getting Started
